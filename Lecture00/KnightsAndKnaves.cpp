@@ -1,3 +1,13 @@
+/*
+    Programming Languages
+    Lecture 00
+
+    Knights and knaves puzzles taken from CS50AI.
+
+    The original source code was made in Python, so I decided to write a
+    C++ version for teaching purposes.
+*/
+
 #include <iostream>
 
 #include <Logic.hpp>

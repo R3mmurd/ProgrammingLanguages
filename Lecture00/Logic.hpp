@@ -1,3 +1,12 @@
+/*
+    Programming Languages
+    Lecture 00
+
+    This is a language model taken from CS50AI.
+    The original source code was made in Python, so I decided to write a
+    C++ version for teaching purposes.
+*/
+
 #pragma once
 
 #include <algorithm>
