@@ -27,6 +27,7 @@ int main()
     // A says "I am both a knight and a knave"
     auto knowledge1 = And::create({
         // A can be a Knight or a Knave but not both
+        // (AKnight || AKnave) && !(AKnight && AKnave)
         And::create({Or::create({a_knight, a_knave}), Not::create(And::create({a_knight, a_knave}))}),
 
         // A says "I am both a knight and a knave."
@@ -49,7 +50,6 @@ int main()
         // B says "We are of different kind."
         Biconditional::create(b_knight, Biconditional::create(a_knight, b_knave))
     });
-
 
     // Puzzle 3
     // A says either "I am a knight." or "I am a knave.", but you don't know which.
