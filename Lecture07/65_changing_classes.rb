@@ -51,4 +51,3 @@ puts r2
 puts r2.area
 
 puts r1.area
-

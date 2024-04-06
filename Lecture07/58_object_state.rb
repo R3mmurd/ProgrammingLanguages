@@ -4,6 +4,14 @@
 class Knight
     def introduce
         puts "Hello, I am a Knight!"
+        @ap = 3
+        @hp = 7
+    end
+
+    def method_2
+        @ap = 1
+        @hp1 = 12
+        nil
     end
 
     def apply_damage dam

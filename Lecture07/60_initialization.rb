@@ -2,9 +2,9 @@
 # Lecture 07: Initialization
 
 class Knight
-    def initialize
-        @hp = 15
-        @ap = 3
+    def initialize(hp = 15, ap = 3)
+        @hp = hp
+        @ap = ap
     end
 
     def introduce
@@ -32,8 +32,7 @@ class Knight
     end
 end
 
-knight1 = Knight.new
-knight1.introduce
-knight2 = knight1
-knight1.apply_damage 8
-knight2.apply_damage 12
+knight = Knight.new(15, 3)
+knight.introduce
+knight.apply_damage 8
+knight.apply_damage 12

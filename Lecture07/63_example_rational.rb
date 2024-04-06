@@ -31,7 +31,7 @@ class MyRational
         @num.to_s + dens
     end
   
-    def to_s3 # using things like Racket's quasiquote and unquote
+    def to_s3 # using # to quote a value
          "#{@num}#{if @den==1 then "" else "/" + @den.to_s end}"
     end
   

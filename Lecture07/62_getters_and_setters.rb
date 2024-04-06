@@ -3,6 +3,8 @@
 
 class Knight
 
+    attr_reader :id, :hp, :ap
+
     @@current_id = 0
 
     Max_Hp = 50
@@ -22,22 +24,14 @@ class Knight
     def to_s
         ans = "Knight: id = " + @id.to_s + " hp = " + @hp.to_s + ", ap = " + @ap.to_s
 
-        if self.is_dead
+        if self.dead?
             ans += " (DEAD)"
         end
 
         ans
     end
 
-    def get_hp
-        @hp
-    end
-
-    def get_ap
-        @ap
-    end
-
-    def is_dead
+    def dead?
         @hp <= 0
     end
 

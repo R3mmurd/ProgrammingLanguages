@@ -44,6 +44,7 @@ class Knight
     end
 end
 
+Knight.print_current_id
 knight1 = Knight.new(15, 3)
 Knight.print_current_id
 knight2 = Knight.new(10, 5)
