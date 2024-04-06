@@ -32,7 +32,7 @@ class Rectangle
     end
 
     def to_s
-        "Rectangle(" + @x.to_s + ", " + @y.to_s + ", " + @w.to_s + ", " + @h.to_s + ")"
+        "Rectangle(#{@x}, #{@y}, #{@w}, #{@h})"
     end
 
 end
