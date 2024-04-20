@@ -1,7 +1,7 @@
 # Programming Languages
 # Lecture 08: Overriding and Dynamic Dispatch
 
-class Point
+class Point2D
     attr_accessor :x, :y
   
     def initialize(x,y)
@@ -21,7 +21,7 @@ class Point
   
 # design question: "Is a 3D-point a 2D-point?" 
 # [arguably poor style here, especially in statically typed OOP languages]
-class ThreeDPoint < Point
+class Point3D < Point2D
     attr_accessor :z
 
     def initialize(x,y,z)
@@ -40,9 +40,9 @@ class ThreeDPoint < Point
     end
 end
 
-class PolarPoint < Point
+class PolarPoint < Point2D
     # Interesting: by not calling super constructor, no x and y instance vars
-    def initialize(r,theta)
+    def initialize(r, theta)
         @r = r
         @theta = theta
     end
@@ -76,7 +76,7 @@ class PolarPoint < Point
 end
 
 # the key example
-pp = PolarPoint.new(4,Math::PI/4)
-pp.x
-pp.y
-pp.dist_from_origin2
+pp = PolarPoint.new(4, Math::PI / 4)
+puts pp.x
+puts pp.y
+puts pp.dist_from_origin2
