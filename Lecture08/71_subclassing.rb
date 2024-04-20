@@ -4,13 +4,13 @@
 class Point
     attr_accessor :x, :y
   
-    def initialize(x,y)
+    def initialize(x, y)
         @x = x
         @y = y
     end
 
     def dist_from_origin
-        Math.sqrt(@x * @x  + @y * @y) # why a module method? Less OOP :-(
+        Math.sqrt(@x * @x + @y * @y) # why a module method? Less OOP :-(
     end
 
     def dist_from_origin2
@@ -22,8 +22,8 @@ end
 class ColorPoint < Point
     attr_accessor :color
 
-    def initialize(x,y,c="clear") # or could skip this and color starts unset
-        super(x,y) # keyword super calls same method in superclass
+    def initialize(x, y, c = "clear") # or could skip this and color starts unset
+        super(x, y) # keyword super calls same method in superclass
         @color = c
     end
 end
@@ -40,4 +40,3 @@ puts cp.is_a? Point                    # true
 puts cp.instance_of? Point             # false
 puts cp.is_a? ColorPoint               # true
 puts cp.instance_of? ColorPoint        # true
-  

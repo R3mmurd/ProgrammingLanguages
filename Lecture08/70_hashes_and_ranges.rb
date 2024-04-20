@@ -23,7 +23,7 @@ puts h3.to_s
 puts h3[:sml]
 
 # each for hashes best with 2-argument block
-h2.each {|k, v| print k; print ": "; puts v}
+h2.each {|k, v| puts "#{k}: #{v}"}
 
 # ranges
 puts (1..100).inject {|acc, item| acc + item}
@@ -32,6 +32,13 @@ def foo a
   a.count {|x| x * x < 50}
 end
 
+class Dummy
+  def count
+    1000
+  end
+end
+
 # duck typing in foo
 puts foo [3, 5, 7, 9]
 puts foo (3..9)
+puts foo Dummy.new

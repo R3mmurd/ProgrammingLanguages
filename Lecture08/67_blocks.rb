@@ -9,6 +9,7 @@ i = 7
 [4, 6, 8].each {|x| if i > x then puts (x + 1) end }
 
 a = Array.new(5) {|i| 4 * (i + 1)}
+puts a.to_s
 a.each { puts "hi" }
 a.each {|x| puts (x * 2) }
 puts a.map  {|x| x * 2 }.to_s

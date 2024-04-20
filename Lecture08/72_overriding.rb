@@ -4,13 +4,13 @@
 class Point2D
     attr_accessor :x, :y
   
-    def initialize(x,y)
+    def initialize(x, y)
         @x = x
         @y = y
     end
 
     def dist_from_origin
-        Math.sqrt(@x * @x  + @y * @y) # uses instance variables directly
+        Math.sqrt(@x * @x + @y * @y) # uses instance variables directly
     end
 
     def dist_from_origin2
@@ -24,8 +24,8 @@ class Point2D
 class Point3D < Point2D
     attr_accessor :z
 
-    def initialize(x,y,z)
-        super(x,y)
+    def initialize(x, y, z)
+        super(x, y)
         @z = z
     end
 
@@ -56,7 +56,7 @@ class PolarPoint < Point2D
     end
 
     def x= a
-        b = y
+        b = y # avoid multiple calls to y method
         @theta = Math.atan2(b, a)
         @r = Math.sqrt(a * a + b * b)
         self

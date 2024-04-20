@@ -15,7 +15,9 @@ class MyVector
     end
 
     def pop_back
-        @size = @size - 1
+        if @size > 0
+            @size = @size - 1
+        end
         @array[@size]
     end
 
@@ -82,6 +84,7 @@ v.push_back(3)
 v.push_back(4)
 v.push_back(5)
 
+v.for_each { puts "hi" }
 v.for_each {|item| puts item * 2}
 v.for_each_enum {|item| puts item * 2}
 v.for_each_enum {|item, idx| puts "array[#{idx}] = #{item}"}
