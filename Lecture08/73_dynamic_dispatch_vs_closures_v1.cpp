@@ -3,7 +3,7 @@
 class A
 {
 public:
-    bool even(int x) const
+    bool even(int x) const // virtual keyword not added, so no dynamic dispatch
     {
         std::cout << "Even in A\n";
         if (x == 0)
