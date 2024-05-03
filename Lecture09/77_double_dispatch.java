@@ -45,7 +45,7 @@ class Int extends Value {
     @Override
     public Exp noNegConstants() {
         if (i < 0) {
-            return new Int(-i);
+            return new Negate(new Int(-i));
         } else {
             return this;
         }
