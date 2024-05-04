@@ -105,12 +105,12 @@ func main() {
 
 	student1 := student{
 		commonData: commonData{
-			firstName: "John",
-			lastName: "Myung",
+			firstName: "James",
+			lastName: "LaBrie",
 			dob: date{
-				d: 24,
-				m: January,
-				y: 1967,
+				d: 5,
+				m: May,
+				y: 1963,
 			},
 			department: "Music",
 			startDate: date{

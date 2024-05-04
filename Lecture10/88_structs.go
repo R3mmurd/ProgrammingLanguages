@@ -21,8 +21,8 @@ func main() {
 	}
 
 	p2 := person{
-		firstName: "Mike",
-		lastName: "Portnoy",
+		firstName: "Floor",
+		lastName: "Jansen",
 		favoriteIceCreamFlavors: []string{"Strawberry", "Mint"},
 	}
 
@@ -45,7 +45,7 @@ func main() {
 		favoriteDrinks []string
 		currentSemesterGrades map[string]float64
 	}{
-		name: "Alex",
+		name: "Tarja Turunen",
 		favoriteDrinks: []string{"Coffee", "Water"},
 		currentSemesterGrades: map[string]float64{
 			"Math": 90,
