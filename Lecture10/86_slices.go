@@ -19,7 +19,7 @@ func main() {
 	xs = append(xs, ys...)
 	fmt.Println(xs)
 
-	// Delete values
+	// Delete values {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} -> {1, 2, 3, 7, 8, 9, 10, 11}
 	xs = append(xs[:3], xs[6:]...)
 	fmt.Println(xs)
 

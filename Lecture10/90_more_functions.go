@@ -21,6 +21,9 @@ func add(a, b int) (result int) {
 }
 
 func main() {
+	fmt.Println(sum())
+	fmt.Println(sum(1))
+	fmt.Println(sum(1, 2))
 	fmt.Println(sum(1, 2, 3, 4, 5))
 	fmt.Println(add(1, 2))
 

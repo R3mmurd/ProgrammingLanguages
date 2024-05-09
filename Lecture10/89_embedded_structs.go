@@ -122,6 +122,7 @@ func main() {
 		avgGrade: 90,
 	}
 
+	fmt.Println(student1.firstName)
 	fmt.Println(student1)
 
 	staff1 := staff{}

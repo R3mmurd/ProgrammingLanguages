@@ -17,7 +17,6 @@ func main() {
 	fmt.Println(someName, someAge)
 
 	// Print formatted string
-	fmt.Printf("An approximation of pi is %f\n", pi)
 	fmt.Printf("%s is %d years old!\n", someName, someAge)
 
 	// Variable group
@@ -36,6 +35,7 @@ func main() {
 
 	// Constant declaration
 	const pi float64 = 3.14159265359
+	fmt.Printf("An approximation of pi is %f\n", pi)
 
 	// Constant group
 	const (

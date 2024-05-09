@@ -10,7 +10,7 @@ func main() {
 	var someArray [5]int
 	fmt.Println(someArray)
 
-	// Array initialization
+	// Array assignment
 	someArray = [5]int{1, 2, 3, 4, 5}
 	fmt.Println(someArray)
 
@@ -36,6 +36,7 @@ func main() {
 	fmt.Println(someArray, anotherArray)
 
 	anotherArray[0] = 100
+	// anotherArray[10] = 100 // Index out of range
 	fmt.Println(someArray, anotherArray)
 
 	// Slicing

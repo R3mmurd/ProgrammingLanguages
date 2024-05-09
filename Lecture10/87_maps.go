@@ -50,6 +50,7 @@ func main() {
 
 	// Map delete
 	delete(programmingLanguageCreators, "SML")
+	delete(programmingLanguageCreators, "JavaScript") // No error
 
 	fmt.Println()
 	for key, value := range programmingLanguageCreators {
